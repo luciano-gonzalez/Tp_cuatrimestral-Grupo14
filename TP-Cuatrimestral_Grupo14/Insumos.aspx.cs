@@ -11,6 +11,9 @@ namespace TP_Cuatrimestral_Grupo14
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string cssFilePath = "EstilosCss/stylesInsumos.css";
+            string cssLink = "<link rel='stylesheet' href='" + cssFilePath + "' />";
+            Page.Header.Controls.Add(new LiteralControl(cssLink));
 
         }
     }
