@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿<%@ Page Title="Pedidos" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Pedidos.aspx.cs" Inherits="TP_Cuatrimestral_Grupo14.Contact" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Pedidos</h2>
@@ -79,3 +80,6 @@
         </ContentTemplate>
     </asp:UpdatePanel>
 </asp:Content>
+=======
+﻿
+>>>>>>> 4cebedad6a6f5074d2d82e3b4f31dfe5f31ad080

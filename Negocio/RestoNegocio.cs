@@ -2,29 +2,42 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Dominio;
+<<<<<<< HEAD
 using System.Runtime.InteropServices;
 using System.ComponentModel;
 
+=======
+>>>>>>> 4cebedad6a6f5074d2d82e3b4f31dfe5f31ad080
 
 namespace Negocio
 {
     public class RestoNegocio
     {
+<<<<<<< HEAD
 
         public List<Insumo> listarcbebidas()
+=======
+        public List<Insumo> listarInsumo()
+>>>>>>> 4cebedad6a6f5074d2d82e3b4f31dfe5f31ad080
         {
             List<Insumo> lista = new List<Insumo>();
             AccesoDatos datos = new AccesoDatos();
 
             try
             {
+<<<<<<< HEAD
                 datos.setearconsulta("select i.IDInsumo,i.IDTipoinsumo,i.Nombre,i.Descripcion,i.Stock,i.Precio,i.ImagenUrl from Insumo i where i.IDTipoinsumo = 2 ");
+=======
+                datos.setearConsulta("SELECT Nombre, Stock, IDInsumo, IDTipoinsumo, Descripcion, ImagenUrl, Precio FROM Insumo where IDTipoinsumo = 1");
+>>>>>>> 4cebedad6a6f5074d2d82e3b4f31dfe5f31ad080
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
+<<<<<<< HEAD
                     Insumo insu = new Insumo();
                     insu.IdInsumo = (int)datos.lector["IDInsumo"];
                     insu.IdTipoInsumo = (int)datos.lector["IDTipoinsumo"];
@@ -41,6 +54,22 @@ namespace Negocio
 
 
 
+=======
+                    Insumo aux = new Insumo();
+                    aux.Nombre = (string)datos.Lector["Nombre"];
+                    aux.CantidadStock = (int)datos.Lector["Stock"];
+                    aux.IdTipoInsumo = (int)datos.Lector["IDTipoinsumo"];
+                    aux.Precio = (float)datos.Lector.GetDecimal(6);
+                    aux.Descripcion = (string)datos.Lector["Descripcion"];
+                    aux.UrlImagen = (string)datos.Lector["ImagenUrl"];
+                    aux.IdInsumo = (int)datos.Lector["IDInsumo"];
+                    lista.Add(aux);
+                }
+
+                return lista;
+            }
+
+>>>>>>> 4cebedad6a6f5074d2d82e3b4f31dfe5f31ad080
             catch (Exception ex)
             {
 
@@ -48,6 +77,7 @@ namespace Negocio
             }
             finally
             {
+<<<<<<< HEAD
                 datos.cerrarconexion();
             }
 
@@ -56,15 +86,29 @@ namespace Negocio
         public List<Plato> listarplatos()
         {
             List<Plato> lista = new List<Plato>();
+=======
+                datos.cerrarConexion();
+            }
+        }
+
+        public List<Insumo> listarBebidas()
+        {
+            List<Insumo> lista = new List<Insumo>();
+>>>>>>> 4cebedad6a6f5074d2d82e3b4f31dfe5f31ad080
             AccesoDatos datos = new AccesoDatos();
 
             try
             {
+<<<<<<< HEAD
                 datos.setearconsulta("select p.IDPlato,p.NombrePlato,p.Descripcion,p.Costo from plato p ");
+=======
+                datos.setearConsulta("SELECT Nombre, Stock, IDInsumo, IDTipoinsumo, Descripcion, ImagenUrl, Precio FROM Insumo where IDTipoinsumo = 2");
+>>>>>>> 4cebedad6a6f5074d2d82e3b4f31dfe5f31ad080
                 datos.ejecutarLectura();
 
                 while (datos.Lector.Read())
                 {
+<<<<<<< HEAD
                     Plato plato = new Plato();
                     plato.IDPlato = (int)datos.Lector["IDPlato"];
                     plato.NombrePlato = (string)datos.Lector["NombrePlato"];
@@ -79,6 +123,22 @@ namespace Negocio
 
 
 
+=======
+                    Insumo aux = new Insumo();
+                    aux.Nombre = (string)datos.Lector["Nombre"];
+                    aux.CantidadStock = (int)datos.Lector["Stock"];
+                    aux.IdTipoInsumo = (int)datos.Lector["IDTipoinsumo"];
+                    aux.Precio = (float)datos.Lector.GetDecimal(6);
+                    aux.Descripcion = (string)datos.Lector["Descripcion"];
+                    aux.UrlImagen = (string)datos.Lector["ImagenUrl"];
+                    aux.IdInsumo = (int)datos.Lector["IDInsumo"];
+                    lista.Add(aux);
+                }
+
+                return lista;
+            }
+
+>>>>>>> 4cebedad6a6f5074d2d82e3b4f31dfe5f31ad080
             catch (Exception ex)
             {
 
@@ -86,6 +146,7 @@ namespace Negocio
             }
             finally
             {
+<<<<<<< HEAD
                 datos.cerrarconexion();
             }
 
@@ -161,4 +222,11 @@ namespace Negocio
 
         
 
+=======
+                datos.cerrarConexion();
+            }
+        }
+    }
+
+>>>>>>> 4cebedad6a6f5074d2d82e3b4f31dfe5f31ad080
 }

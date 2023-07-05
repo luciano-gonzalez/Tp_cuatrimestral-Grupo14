@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using Dominio;
 using Negocio;
 using System;
@@ -197,3 +198,6 @@ namespace TP_Cuatrimestral_Grupo14
 
     }
 }
+=======
+﻿
+>>>>>>> 4cebedad6a6f5074d2d82e3b4f31dfe5f31ad080

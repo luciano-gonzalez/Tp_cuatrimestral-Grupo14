@@ -11,34 +11,25 @@ namespace TP_Cuatrimestral_Grupo14
 {
 
 
-    public partial class _Default
+    public partial class ABRIR_CERRAR
     {
 
         /// <summary>
-        /// Control gvStockInsumos.
+        /// Control TextBox1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvStockInsumos;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
-        /// Control gvStockPlatos.
+        /// Control btnAsignarReasignarMesas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvStockPlatos;
-
-        /// <summary>
-        /// Control gvStockBebidas.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvStockBebidas;
+        protected global::System.Web.UI.WebControls.Button btnAsignarReasignarMesas;
     }
 }
