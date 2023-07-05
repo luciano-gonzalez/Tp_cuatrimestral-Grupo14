@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -12,6 +13,26 @@ namespace TP_Cuatrimestral_Grupo14
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+            
+               
+            
+
+            
+
+            
+
+        }
+
+        protected void btnAsignarReasignarMesas_Click(object sender, EventArgs e)
+        {
+           
+
+        }
+
+        protected void btnAsignarReasignarMesass_Click(object sender, EventArgs e)
+        {
+=======
             if (!IsPostBack)
             {
                 // Crear las mesas y asignar los eventos a los botones
@@ -20,6 +41,7 @@ namespace TP_Cuatrimestral_Grupo14
                     var mesaDiv = new HtmlGenericControl("div");
                     mesaDiv.Attributes["class"] = "mesa " + (i <= 8 ? "cuadrada" : "rectangular");
                     mesaDiv.InnerText = i.ToString();
+>>>>>>> 4cebedad6a6f5074d2d82e3b4f31dfe5f31ad080
 
                     var botonDiv = new HtmlGenericControl("div");
                     botonDiv.Attributes["class"] = "boton-container";
