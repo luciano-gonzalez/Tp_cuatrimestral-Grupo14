@@ -102,7 +102,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EstilosCss\stylesInsumos.css" />
+    <Content Include="ABRIR_CERRAR.aspx" />
+    <Content Include="Content\estilos inicio.css" />
+    <Content Include="Content\estilos.css" />
     <Content Include="Insumos.aspx" />
     <Content Include="Pedidos.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -153,7 +155,10 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\botones.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
@@ -187,6 +192,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABRIR_CERRAR.aspx.cs">
+      <DependentUpon>ABRIR_CERRAR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABRIR_CERRAR.aspx.designer.cs">
+      <DependentUpon>ABRIR_CERRAR.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Insumos.aspx.cs">
       <DependentUpon>Insumos.aspx</DependentUpon>
@@ -198,7 +210,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Pedidos.aspx.cs">
       <DependentUpon>Pedidos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pedidos.aspx.designer.cs">
       <DependentUpon>Pedidos.aspx</DependentUpon>
@@ -234,6 +245,20 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

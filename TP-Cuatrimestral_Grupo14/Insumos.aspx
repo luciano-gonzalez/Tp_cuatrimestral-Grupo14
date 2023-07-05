@@ -12,7 +12,7 @@
     <link rel = "icon" href="chico.ico">
     
     <script src="https://kit.fontawesome.com/fb3527f234.js" crossorigin="anonymous"></script>
-    
+    <link href="Content/estilos.css" rel="stylesheet" />    
     
 
     
@@ -40,12 +40,7 @@
                         <div class="tooltip">Menú</div>
                     </a>
                 </li>
-                <li id="btnContacto">
-                    <a href="#" >
-                        <i class="fa-solid fa-address-book"></i>
-                        <div class="tooltip">Contacto</div>
-                    </a>
-                </li>
+          
             </ul>
 
         </nav>
@@ -53,79 +48,41 @@
 
     <div class="container_home" id="contMenu">
         <div class="contenido">
-                    <div class="imagen_detail">
-                        <img src="imagenes/imagen.jpg" alt="">
-                    </div>
-                <div class="text_detail">
-                    <h1>Luciano González</h1>
-                    <span></span>
-                    <h2>Mi página web</h2>
-                    <p>Bienvenido a mi página web, en esta página encontrará información sobre mis conocimientos
-                        además de mis redes y contacto si así lo desea.
-                    </p>
-                </div>
-                <div class="redes">
-                    <a href="https://www.linkedin.com/in/luciano-gonz%C3%A1lez-8713151a7/" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100004292027572" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://www.instagram.com/gonzzalez__/" target="_blank">
-                        <i class="fa-brands fa-square-instagram"></i>
-                    </a>
-                </div>
+             <h1>Stock de Insumos</h1>
+            
+            <asp:GridView ID="gvStockInsumos" runat="server" CssClass="grid-view" AutoGenerateColumns="false">
+                <Columns>
+                    <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
+                    <asp:BoundField DataField="StockTotal" HeaderText="Stock Total" />
+                </Columns>
+            </asp:GridView>
+         
         </div>
     </div>
     <div class="container_Conocimiento" id="contConocimiento">
         <div class="contenido">
-                    <h1>Conocimientos</h1>
-                    <div class="imagenesConocimiento">
-                        <img src="imagenes/c.png" alt="">
-                        <img src="imagenes/c++.png" alt="">
-                        <img src="imagenes/GitHub.jpg" alt="">
-                        <img src="imagenes/sqlServer.jpg" alt="">
-                        <img src="imagenes/web.png" alt="">
-                    </div>
-        </div>
+            <h1>Stock de Platos</h1>
+            <asp:GridView ID="gvStockPlatos" runat="server" CssClass="grid-view" AutoGenerateColumns="false">
+                <Columns>
+                    <asp:BoundField DataField="NombrePlato" HeaderText="Nombre del Plato" />
+                    <asp:BoundField DataField="StockTotalPlato" HeaderText="Stock Total del Plato" />
+                </Columns>
+            </asp:GridView>
+            </div>
     </div>
     <div class="container_Proyectos" id="contProyectos">
         <div class="contenido">
-                    <h1>Proyectos</h1>
+            <h1>Stock de Bebidas</h1>
+            <asp:GridView ID="gvStockBebidas" runat="server" CssClass="grid-view" AutoGenerateColumns="false">
+                <Columns>
+                    <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
+                    <asp:BoundField DataField="StockTotalBebidas" HeaderText="Stock Total de Bebidas" />
+                </Columns>
+            </asp:GridView>
         </div>
     </div>
-    <div class="container_Contacto" id="contContacto">
-        <div class="contenido">
-                    <h1>Contacto</h1>
-                    <div class="containerForm">
-                        <div class="infoForm">
-                            <h2>Contactame</h2>
-                            <a href="">
-                                <i class="fa-solid fa-phone"></i>
-                                +54 (011) 55610538
-                            </a>
-                            <a href="">
-                                <i class="fa-solid fa-envelope"></i>
-                                luchogon1002@hotmail.com
-                            </a>
-                            <form action="" autocomplete="off">
-                                <input type="text" name="nombre"
-                                placeholder="Ingrese su nombre"
-                                class="campo">
-                                <input type="email" name="email"
-                                placeholder="Ingresa tu correo"
-                                class="campo">
-                                <textarea name="mensaje"
-                                placeholder="Ingresa tu mensaje">
-                                </textarea>
-                                <input type="submit" name="enviar"
-                                value="Enviar mensaje" class="btn-enviar">
-                            </form>
-                        </div>
-                    </div>
-        </div>
-    </div>
-
+   
+        <script src="Scripts/botones.js"></script>
 
     </main>
 </asp:Content>
