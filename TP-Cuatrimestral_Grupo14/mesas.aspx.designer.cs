@@ -11,7 +11,7 @@ namespace TP_Cuatrimestral_Grupo14
 {
 
 
-    public partial class About
+    public partial class _Default
     {
     }
 }
